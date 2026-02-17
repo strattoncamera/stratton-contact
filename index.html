@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stratton Contact</title>
-<link rel="canonical" href="https://stratton.contact/">
 <meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/favicon.png">
 <style>
 :root {
-  --bg: #0f1115;
-  --accent: #0072c5;
-  --text: #e6e6e6;
+  --bg: #0b0f14;
+  --text: #9da1a1;
   --subtle: #9aa0a6;
+  --accent: #6ea8ff;
+  --rule: #1f2a38;
 }
+
 body {
   margin: 0;
   background: var(--bg);
@@ -20,52 +22,128 @@ body {
   font-family: -apple-system, "Helvetica Neue", Roboto, "Segoe UI", sans-serif;
   min-height: 100vh;
   display: grid;
-  place-items: center;
-  text-align: center;
+  justify-items: center;
+  align-items: start;
 }
+
 main {
-  max-width: 40rem;
-  padding: 3.5rem 2rem;
+  width: 100%;
+  max-width: 720px;
+  padding: 3rem 2rem;
 }
+
 h1 {
   font-weight: 300;
-  letter-spacing: -0.01em;
-  font-size: 1.6rem;
-  margin: 0 0 25px;
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: -0.02em;
 }
-h1::after {
-  content: "";
-  display: block;
-  width: 3.5rem;
-  height: 2px;
-  margin: 1.5rem auto 2rem;
-  background: var(--accent);
-}
-p {
-  margin: 0 0 1.125rem;
+
+h2 {
+  margin: 0 0 1.5rem;
+  font-weight: 200;
   font-size: 1rem;
-  line-height: 1.6;
   color: var(--subtle);
 }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 0 0 1.5rem;
+}
+
+.section {
+  margin-bottom: 1.3rem;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: .9rem;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+}
+
+.section a {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.15s ease;
 }
-a:hover {
+
+a:hover:not(.website) {
   border-color: var(--accent);
+}
+
+.website {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.website:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
 <body>
 <main>
-  <h1>Stratton Contact</h1>
-  <p>This domain is used exclusively for email communication.</p>
-  <p>
-  For detailed contact information please visit<br>
-  <a href="https://lonstratton.com/contact">lonstratton.com/contact</a>
-</p>
+
+<h1>Stratton</h1>
+<h2>Direct contact information</h2>
+
+<hr>
+
+<div class="section">
+  <div class="section-title">Lon — Personal</div>
+  <a href="mailto:lon@stratton.contact">lon@stratton.contact</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Diane — Personal</div>
+  <a href="mailto:diane@stratton.contact">diane@stratton.contact</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Diane — Business</div>
+  <a href="mailto:diane@strattoncamera.com">diane@strattoncamera.com</a>
+  <a class="website" href="https://strattoncamera.com">Website</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Kyle — Business</div>
+  <a href="mailto:kyle@strattoncamera.com">kyle@strattoncamera.com</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Ryan — Business</div>
+  <a href="mailto:ryanstrattonmusic@gmail.com">ryanstrattonmusic@gmail.com</a>
+  <a class="website" href="https://ryanstrattonmusic.com">Website</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Cinematography</div>
+  <a href="mailto:lon@lonstratton.com">lon@lonstratton.com</a>
+  <a class="website" href="https://lonstratton.com">Website</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Photography</div>
+  <a href="https://jerrystrattonphotography.com">Jerry Stratton Photography</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Aviation</div>
+  <a href="mailto:lon@n7xa.com">lon@n7xa.com</a>
+  <a class="website" href="https://n7xa.com">Website</a>
+</div>
+<hr>
 </main>
 </body>
 </html>
